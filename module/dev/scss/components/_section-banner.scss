@@ -1,0 +1,61 @@
+.section-banner {
+  @include v-center(700px);
+
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  background: $gray-light;
+
+  .banner-text {
+    color: $banner-color;
+  }
+
+  .df-row {
+    .col-sm-6 {
+      @include media("≥tablet") {
+        padding: 0 65px;
+      }
+    }
+    @include media("≥tablet") {
+      margin: 0 -65px;
+    }
+  }
+
+  .banner-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .title {
+    color: $black;
+    margin: 0 auto;
+    text-align: center;
+
+    @include media("≥tablet") {
+      margin-bottom: 60px;
+    }
+  }
+
+  p {
+    @include media("≥tablet") {
+      margin-bottom: 60px;
+    }
+  }
+  .btn-wrap {
+    justify-content: center;
+    @include media("≥tablet") {
+      justify-content: flex-start;
+    }
+  }
+  .btn {
+    max-width: 225px;
+    text-align: center;
+    @include media("≥tablet") {
+      padding: 25px 40px;
+    }
+  }
+}

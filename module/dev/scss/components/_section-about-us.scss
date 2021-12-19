@@ -1,0 +1,21 @@
+.section-about-us {
+  padding: 60px 0 40px;
+
+  @include media("≥tablet") {
+    padding: 120px 0 80px;
+  }
+
+  .holder {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 540px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+
+    @include media("≥tablet") {
+      margin-bottom: 50px;
+    }
+  }
+}

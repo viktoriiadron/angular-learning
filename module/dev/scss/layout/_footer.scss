@@ -1,0 +1,39 @@
+#footer {
+  background: $base-background-footer;
+  .footer-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white;
+
+    .contact {
+      .name {
+        display: block;
+
+        @include media("≥tablet") {
+          font-size: 21px;
+          margin-bottom: 15px;
+        }
+      }
+      .copy {
+        display: block;
+        font-size: 10px;
+        @include media("≥tablet") {
+          font-size: 13px;
+        }
+      }
+    }
+
+    @include media("≥tablet") {
+      min-height: 151px;
+    }
+
+    .social {
+      a {
+        font-size: 23px;
+        color: $white;
+        padding-left: 22px;
+      }
+    }
+  }
+}

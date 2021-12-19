@@ -1,0 +1,49 @@
+.section-img {
+  .img-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .img-item {
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 25%;
+
+    @include media("≥tablet") {
+      width: 25%;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: rgba(52, 84, 122, 0.8);
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &:hover {
+      &:before,
+      img {
+        @include animate(transform);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    img {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

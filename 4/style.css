@@ -1,0 +1,233 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.cite-holder {
+  font-size: 25px;
+  color: white;
+  padding-top: 15px;
+}
+
+.cite-holder i {
+  text-align: center;
+  display: block;
+}
+
+.blockquote {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.card-box-holder {
+  width: 600px;
+  height: 600px;
+  background: #0d5825;
+}
+
+.picture-holder {
+  position: relative;
+  width: 100%;
+}
+
+.card1-holder img,
+.card2-holder img,
+.card3-holder img {
+  width: 150px;
+}
+
+.card1-holder img {
+  position: absolute;
+  top: 200px;
+  left: 35%;
+  transform: rotate(-15deg);
+  transform-origin: bottom left;
+  transition: 0.5s ease-in-out;
+}
+
+.card2-holder img {
+  position: absolute;
+  top: 200px;
+  left: 40%;
+  transform: rotate(-5deg);
+  transform-origin: bottom left;
+  transition: 0.5s ease-in-out;
+}
+
+.card3-holder img {
+  position: absolute;
+  top: 200px;
+  left: 45%;
+  transform: rotate(5deg);
+  transform-origin: bottom left;
+  transition: 0.5s ease-in-out;
+}
+
+.card1-holder img:hover {
+  position: absolute;
+  top: 180px;
+  left: 35%;
+  transform: rotate(-15deg);
+  transform-origin: bottom left;
+  transition: 0.5s ease-in-out;
+}
+
+.card2-holder img:hover {
+  position: absolute;
+  top: 180px;
+  left: 40%;
+  transform: rotate(-5deg);
+  transform-origin: bottom left;
+  transition: 0.5s ease-in-out;
+}
+
+.card3-holder img:hover {
+  position: absolute;
+  top: 180px;
+  left: 45%;
+  transform: rotate(5deg);
+  transform-origin: bottom left;
+  transition: 0.5s ease-in-out;
+}
+
+.three-box-section {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.first-box {
+  position: absolute;
+  background: red;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+.second-box {
+  position: absolute;
+  background: violet;
+  width: 100px;
+  height: 100px;
+  z-index: 3;
+  transform: translate(50%, 50%);
+}
+
+.third-box {
+  position: absolute;
+  background: green;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  transform: translate(100%, 100%);
+}
+
+.menu {
+  height: 100vh;
+  width: 400px;
+  position: relative;
+  top: 0;
+  left: -350px;
+  bottom: 0;
+  background: grey;
+  text-transform: uppercase;
+  padding-top: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.menu:hover {
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-holder a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-holder a:hover {
+  color: bisque;
+  transition: 0.2s ease-in;
+}
+
+.nav-holder ul {
+  list-style: none;
+}
+
+.nav-holder li {
+  margin: 15px;
+}
+
+.text-holder {
+  writing-mode: vertical-lr;
+  text-align: center;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  color: white;
+  z-index: 1;
+}
+
+.text-holder:hover {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+@keyframes slide-box {
+  0% {
+    top: 0;
+    left: 0;
+    background: red;
+  }
+  25% {
+    top: calc(100% - 100px);
+    left: 0;
+    background: blue;
+  }
+  50% {
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+    background: green;
+  }
+  75% {
+    top: 0;
+    left: calc(100% - 100px);
+    background: yellow;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    background: red;
+  }
+}
+
+.box-wrap {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.holder {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  animation: slide-box 5s infinite;
+}

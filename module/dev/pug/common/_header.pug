@@ -1,0 +1,19 @@
+header#header
+	.container
+		.header-holder
+			.logo: a(href="#")
+				img(src="images/logo.png" alt="wd" width="96" height="60")
+			nav#nav(role='navigation', aria-label='Primary Menu')
+				a(href="#").nav-opener: span Open
+				.nav-drop
+					ul.primary-menu
+						li.menu-item.active
+							a(href='#') ГЛАВНАЯ
+						li.menu-item
+							a(href='#') ОБ АВТОРЕ
+						li.menu-item
+							a(href='#') РАБОТЫ
+						li.menu-item
+							a(href='#') ПРОЦЕСС
+						li.menu-item.menu-item-has-children
+							a(href='#') КОНТАКТЫ

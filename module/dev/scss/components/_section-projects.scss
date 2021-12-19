@@ -1,0 +1,51 @@
+.section-projects {
+  background: $blue;
+  color: $white;
+  padding: 20px 0 0;
+
+  @include media("≥tablet") {
+    padding: 100px 0 50px;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -25px;
+  }
+
+  .col {
+    width: 50%;
+    padding: 0 25px 50px;
+    flex-basis: 50%;
+
+    @include media("≥tablet") {
+      width: 33.33%;
+      flex-basis: 33.33%;
+    }
+
+    @include media("≥desktop") {
+      width: 16.6%;
+      flex-basis: 16.6%;
+    }
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+  }
+
+  .text-box {
+    max-width: 71px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-box {
+    margin-right: 20px;
+  }
+
+  .title {
+    color: $white;
+    margin-bottom: 10px;
+  }
+}

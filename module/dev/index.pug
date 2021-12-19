@@ -1,0 +1,141 @@
+include pug/common/_head
+	block content
+		include pug/common/_header
+		main#main(role="main")
+			// section banner template
+			section.section-banner
+				.container
+					.df-row
+						.col-ph-12.col-sm-6.banner-img
+							<img src="images/frame1.png", alt="img-desc"/>
+						.col-ph-12.col-sm-6
+							.banner-text
+								h1.title Дизайн и верстка
+								p  Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+								.btn-wrap
+									a.btn.btn-default(href="#") НАПИСАТЬ МНЕ
+			section.section-about-us 
+				.container 
+					.holder 
+						h2.title Обо мне
+						p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.			
+			section.section-projects
+				.container 
+					.list 
+						.col
+							.item
+								.icon-box 
+									img(src="images/icon.svg", alt="icon")
+								.text-box 
+									h3.title 40+
+									span проектов
+						.col
+							.item
+								.icon-box 
+									img(src="images/icon.svg", alt="icon")
+								.text-box 
+									h3.title 40+
+									span проектов
+						.col
+							.item
+								.icon-box 
+									img(src="images/icon.svg", alt="icon")
+								.text-box 
+									h3.title 40+
+									span проектов
+						.col
+							.item
+								.icon-box 
+									img(src="images/icon.svg", alt="icon")
+								.text-box 
+									h3.title 40+
+									span проектов
+						.col
+							.item
+								.icon-box 
+									img(src="images/icon.svg", alt="icon")
+								.text-box 
+									h3.title 40+
+									span проектов
+						.col
+							.item
+								.icon-box 
+									img(src="images/icon.svg", alt="icon")
+								.text-box 
+									h3.title 40+
+									span проектов
+			section.section-skill 
+				.container 	
+					.skill-row 
+						.skill-col 
+							.skill-box 
+								h2.title Мои навыки
+								.skill-list 
+									.skill-item
+										span.skill-name Adobe Photoshop
+										.skill-load
+											.skill-fill
+									.skill-item
+										span.skill-name Adobe Photoshop
+										.skill-load
+											.skill-fill
+									.skill-item
+										span.skill-name Adobe Photoshop
+										.skill-load
+											.skill-fill
+						.skill-col 
+							img(src="images/photo.jpg", alt="photo")
+			section.section-work 
+				.container 
+					.holder 
+						h2 	Как я работаю
+						p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+						.video-content
+							video(src="#" poster="images/video.jpg")
+							img(src="images/play.png", alt="play")
+			section.section-img
+				.img-list
+					a(href="#").img-item(style="background-image: url(images/desk.jpg)")
+						img(src="images/icon02.svg", alt="eye")
+					a(href="#").img-item(style="background-image: url(images/laptop.jpg)")
+						img(src="images/icon02.svg", alt="eye")
+					a(href="#").img-item(style="background-image: url(images/desk.jpg)")
+						img(src="images/icon02.svg", alt="eye")
+					a(href="#").img-item(style="background-image: url(images/laptop.jpg)")
+						img(src="images/icon02.svg", alt="eye")
+					a(href="#").img-item(style="background-image: url(images/laptop.jpg)")
+						img(src="images/icon02.svg", alt="eye")
+					a(href="#").img-item(style="background-image: url(images/desk.jpg)")
+						img(src="images/icon02.svg", alt="eye")
+					a(href="#").img-item(style="background-image: url(images/laptop.jpg)")
+						img(src="images/icon02.svg", alt="eye")
+					a(href="#").img-item(style="background-image: url(images/desk.jpg)")
+						img(src="images/icon02.svg", alt="eye")
+			section.section-partner 	
+				.container 	
+					.partners-holder 
+						.partner-logo 
+							a(href="#") 
+								img(src="images/ms-logo.png", alt="microsoft" width="255px" height="120px")
+						.partner-logo 
+							a(href="#") 
+								img(src="images/ms-logo.png", alt="microsoft" width="255px" height="120px")
+						.partner-logo 
+							a(href="#") 
+								img(src="images/ms-logo.png", alt="microsoft" width="255px" height="120px")
+						.partner-logo 
+							a(href="#") 
+								img(src="images/ms-logo.png", alt="microsoft" width="255px" height="120px")
+			section.section-form 
+				.container 
+					.form-holder 
+						h2 Хотите веб-сайт?
+						p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+						.form 		
+							form(action="#")
+								input(type="text" name='name' class="input" placeholder="Ваше имя") 
+								input(type="email" class="input" name="e-mail" placeholder="Ваш e-mail")
+								input(type="textarea" class="textarea" name="message" placeholder="Сообщение")
+								input(type="submit" name="submit" class="btn" value='отправить')
+			
+		include pug/common/_footer
